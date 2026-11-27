@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Google Analytics 4 (KbizLab 저서 랜딩페이지) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZZJG9HS3Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NZZJG9HS3Y');
+</script>
 <title>저서 13권 · 실무 자료실 | KbizLab 강민수 기업성장연구소</title>
 <meta name="description" content="법인경영·지배구조·자본구조·가업승계를 22년 현장에서 다뤄온 강민수 대표의 저서 13권과 무료 실무 자료실. 종이책은 부크크 POD, 전자책은 유페이퍼에서 바로 구매하실 수 있습니다.">
 <meta property="og:title" content="저서 13권 · 실무 자료실 | KbizLab 강민수 기업성장연구소">
@@ -625,6 +633,19 @@
     </p>
   </div>
 </footer>
+
+<!-- GA4: 판매처(부크크·유페이퍼) 버튼 클릭 이벤트 -->
+<script>
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a.chip-bookk, a.chip-upaper') : null;
+    if (!a || typeof gtag !== 'function') return;
+    gtag('event', 'store_click', {
+      store: a.classList.contains('chip-bookk') ? 'bookk' : 'upaper',
+      link_url: a.href,
+      link_text: (a.textContent || '').trim().slice(0, 100)
+    });
+  }, true);
+</script>
 
 </body>
 </html>
