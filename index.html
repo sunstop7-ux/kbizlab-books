@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>저서 13권 · 실무 자료실 | KbizLab 강민수 기업성장연구소</title>
+<meta name="description" content="법인경영·지배구조·자본구조·가업승계를 22년 현장에서 다뤄온 강민수 대표의 저서 13권과 무료 실무 자료실. 종이책은 부크크 POD, 전자책은 유페이퍼에서 바로 구매하실 수 있습니다.">
+<meta property="og:title" content="저서 13권 · 실무 자료실 | KbizLab 강민수 기업성장연구소">
+<meta property="og:description" content="책 13권과 강의 자료를 한곳에. 종이책은 부크크에서, 전자책은 유페이퍼에서 바로.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b3b2e'/%3E%3Ctext x='50' y='68' font-size='52' font-family='sans-serif' font-weight='700' fill='%23e8c88a' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#10231d; --ink-soft:#41544a; --ink-mute:#6b7d73;
+    --emerald:#0b3b2e; --emerald-2:#14523f; --emerald-3:#0e4636;
+    --cream:#f8f4ea; --cream-2:#efe7d5; --paper:#fffdf8;
+    --gold:#c9a45c; --gold-soft:#e8c88a; --line:rgba(16,35,29,.12);
+    --radius:18px; --shadow:0 10px 30px rgba(11,59,46,.08);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{
+    margin:0;color:var(--ink);background:var(--cream);line-height:1.65;word-break:keep-all;
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Noto Sans KR",sans-serif;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%}
+  .wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 20px}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+  /* header */
+  .site-head{position:sticky;top:0;z-index:20;background:rgba(11,59,46,.97);color:#f4efe2;border-bottom:2px solid var(--gold);backdrop-filter:blur(6px)}
+  .site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
+  .brand{display:flex;align-items:center;gap:10px;min-width:0}
+  .brand-mark{width:34px;height:34px;flex:0 0 34px;border-radius:9px;background:linear-gradient(160deg,var(--gold-soft),var(--gold));color:#0b3b2e;font-weight:800;display:grid;place-items:center;font-size:17px}
+  .brand-text strong{display:block;font-size:14.5px;letter-spacing:.2px}
+  .brand-text span{display:block;font-size:11px;color:#c8d6cd;letter-spacing:.4px}
+  .head-links{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+  .head-links a{font-size:12.5px;color:#e9e1cd;border:1px solid rgba(233,225,205,.35);border-radius:999px;padding:5px 11px;white-space:nowrap}
+  .head-links a:hover{background:rgba(233,225,205,.14)}
+
+  /* hero */
+  .hero{
+    background:
+      radial-gradient(1100px 400px at 10% -20%, rgba(201,164,92,.30), transparent 62%),
+      radial-gradient(800px 340px at 95% 0%, rgba(232,200,138,.14), transparent 60%),
+      linear-gradient(180deg,var(--emerald) 0%, var(--emerald-2) 100%);
+    color:#f7f2e5;padding:44px 0 50px;
+  }
+  .eyebrow{display:inline-block;font-size:11.5px;letter-spacing:1.6px;color:var(--gold-soft);border:1px solid rgba(232,200,138,.45);border-radius:999px;padding:5px 12px;margin-bottom:16px}
+  .hero h1{font-size:clamp(26px,4.4vw,40px);line-height:1.32;margin:0 0 14px;letter-spacing:-.5px}
+  .hero h1 em{font-style:normal;color:var(--gold-soft)}
+  .hero p{font-size:clamp(14px,1.7vw,16.5px);color:#dfe8e2;margin:0 0 24px;max-width:44em}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 22px;font-weight:700;font-size:14.5px;border:1px solid transparent;transition:transform .12s ease, background .15s ease}
+  .btn:active{transform:translateY(1px)}
+  .btn-gold{background:linear-gradient(160deg,var(--gold-soft),var(--gold));color:#2b2110;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+  .btn-ghost{border-color:rgba(233,225,205,.45);color:#f2ecdd}
+  .btn-ghost:hover{background:rgba(233,225,205,.12)}
+  .btn-dark{background:var(--emerald);color:#f6f1e4}
+  .hero-note{margin-top:18px;font-size:12.5px;color:#b9cbc1}
+  .hero-note b{color:#f0e7d2}
+
+  /* section */
+  section{padding:52px 0}
+  .sec-head{margin-bottom:26px}
+  .sec-kicker{font-size:11.5px;letter-spacing:1.6px;color:var(--gold);font-weight:700;text-transform:uppercase;margin-bottom:8px}
+  .sec-head h2{font-size:clamp(21px,2.8vw,28px);margin:0 0 8px;letter-spacing:-.4px}
+  .sec-head p{margin:0;color:var(--ink-soft);font-size:14.5px}
+  .sec-head p + p{margin-top:8px}
+
+  /* diagnose cards */
+  .diag{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .diag a{
+    display:block;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px;
+    box-shadow:var(--shadow);transition:transform .12s ease,border-color .15s ease
+  }
+  .diag a:hover{transform:translateY(-2px);border-color:rgba(201,164,92,.6)}
+  .diag .num{font-size:11px;font-weight:800;color:var(--gold);letter-spacing:1px}
+  .diag strong{display:block;font-size:15.5px;margin:4px 0 4px}
+  .diag span{font-size:12.5px;color:var(--ink-mute)}
+
+  /* books */
+  .group{margin-bottom:34px}
+  .group-head{display:flex;align-items:baseline;gap:10px;margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .group-head h3{margin:0;font-size:16.5px}
+  .group-head span{font-size:12px;color:var(--ink-mute)}
+  .books{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .book{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow)}
+  .cover{
+    aspect-ratio:3/2;border-radius:10px;display:flex;flex-direction:column;justify-content:space-between;
+    padding:12px;color:#f7f2e5;background:linear-gradient(150deg,#123f31,#0b2e25);overflow:hidden;position:relative
+  }
+  .cover::after{content:"";position:absolute;inset:0;background:radial-gradient(220px 120px at 90% 0%,rgba(232,200,138,.28),transparent 70%);pointer-events:none}
+  .cover .k{font-size:10px;letter-spacing:1.4px;color:var(--gold-soft)}
+  .cover .t{font-size:15px;font-weight:800;line-height:1.3;letter-spacing:-.3px}
+  .cover .s{font-size:10.5px;color:#c9d8ce;margin-top:4px}
+  .book h4{margin:0;font-size:15px;line-height:1.4}
+  .book .desc{margin:0;font-size:12.8px;color:var(--ink-soft);flex:1}
+  .book .meta{font-size:11.5px;color:var(--ink-mute)}
+  .book .meta b{color:var(--ink);font-weight:700}
+  .book .links{display:flex;flex-direction:column;gap:6px}
+  .buy-row{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:12.5px;font-weight:700;border-radius:9px;padding:9px 12px;border:1px solid var(--line);background:#fff;line-height:1.2}
+  .chip:hover{background:#fff8e8}
+  .chip-bookk{background:linear-gradient(160deg,#155640,#0b3b2e);color:#f7f2e5;border-color:#0b3b2e;flex:1;min-width:calc(50% - 3px);box-shadow:0 4px 12px rgba(11,59,46,.18)}
+  .chip-bookk:hover{background:linear-gradient(160deg,#1a6a4f,#0d4635)}
+  .chip-upaper{background:linear-gradient(160deg,#e8c88a,#c9a45c);color:#2b2110;border-color:#c9a45c;flex:1;min-width:calc(50% - 3px);box-shadow:0 4px 12px rgba(201,164,92,.22)}
+  .chip-upaper:hover{background:linear-gradient(160deg,#f0d69f,#d4b06a)}
+  .chip-sub{font-size:11.5px;font-weight:600;padding:7px 10px;color:var(--ink-soft);background:#f6f2e6}
+  .chip-muted{background:#f2eee2;color:var(--ink-mute);border-color:transparent;font-weight:600}
+  .store-note{margin:0;font-size:11px;color:var(--ink-mute)}
+
+  /* library */
+  .lib{background:var(--cream-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .lib-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center}
+  .lib-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+  .lib-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  .lib-list li{display:flex;gap:10px;font-size:13.5px;color:var(--ink-soft)}
+  .lib-list b{color:var(--ink)}
+  .tick{flex:0 0 20px;height:20px;border-radius:50%;background:rgba(11,59,46,.08);color:var(--emerald);display:grid;place-items:center;font-size:11px;font-weight:900}
+
+  /* lecture */
+  .topics{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+  .topics span{font-size:12.5px;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:7px 12px}
+  .contact{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
+  .contact div{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px}
+  .contact dt{font-size:11px;letter-spacing:1.2px;color:var(--gold);font-weight:800;margin-bottom:4px}
+  .contact dd{margin:0;font-size:15px;font-weight:700}
+
+  /* trust */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .stats div{background:var(--emerald);color:#f6f1e4;border-radius:14px;padding:16px}
+  .stats strong{display:block;font-size:24px;color:var(--gold-soft);line-height:1.1}
+  .stats span{font-size:12px;color:#c9d8ce}
+
+  /* footer */
+  footer{background:#081f19;color:#b9cbc1;padding:34px 0 40px;font-size:12.5px}
+  footer .row{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between}
+  footer strong{color:#e9e1cd}
+  footer p{margin:6px 0 0}
+  footer .fine{margin-top:18px;padding-top:14px;border-top:1px solid rgba(233,225,205,.15);font-size:11.5px;color:#8fa79b}
+
+  /* pod (paper books) */
+  .pod{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+  .pod-list{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+  .pod-list li{border-top:1px dashed rgba(16,35,29,.16);padding-top:16px}
+  .pod-list li:first-child{border-top:0;padding-top:0}
+  .pod-t{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}
+  .pod-t strong{font-size:15px}
+  .pod-t span{font-size:12px;color:var(--ink-mute)}
+  .pod-s{font-size:12.5px;color:var(--ink-soft);margin:4px 0 10px}
+  .pod .links{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .pod .chip-bookk{flex:0 0 auto;min-width:0}
+  .pod-note{font-size:12px;color:var(--ink-mute);margin:16px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+  .alert{background:#fff7e6;border:1px solid rgba(201,164,92,.45);border-radius:12px;padding:14px 16px;font-size:13px;color:#5c4a24;margin:0 0 20px}
+
+  @media (max-width:860px){
+    .diag,.books,.contact,.stats{grid-template-columns:repeat(2,1fr)}
+    .lib-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){
+    .diag{grid-template-columns:1fr}
+    .books{grid-template-columns:1fr}
+    .contact{grid-template-columns:1fr}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    section{padding:40px 0}
+    .hero{padding:34px 0 38px}
+    .brand-text span{display:none}
+    .chip{font-size:12px;padding:8px 10px}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="brand-mark">K</span>
+      <span class="brand-text"><strong>강민수 기업성장연구소</strong><span>KbizLab · 법인경영 · 가업승계</span></span>
+    </a>
+    <nav class="head-links">
+      <a href="#books">저서 13권</a>
+      <a href="#pod">부크크 종이책</a>
+      <a href="#library">무료 자료실</a>
+      <a href="#lecture">강의·자문</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">KBIZLAB · 강민수 기업성장연구소</span>
+      <h1>22년, 3,000개 기업 현장에서 만든<br><em>법인경영 실무</em>를 책과 자료로</h1>
+      <p>지배구조·자본구조·가업승계부터 정책자금·인증·노무·고용지원금까지. 대표님이 회사에서 바로 쓰는 기준으로 정리한 저서 13권과 강의 자료를 한곳에 모았습니다.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#pod">부크크에서 종이책 사기</a>
+        <a class="btn btn-ghost" href="#books">전자책·도서 전체 보기</a>
+      </div>
+      <p class="hero-note">종이책 9종은 <b>부크크(Bookk) POD</b>로 주문 즉시 인쇄·배송 · 전자책 10종은 <b>유페이퍼</b>에서 5,000원부터 · 교보문고·예스24·알라딘·영풍문고에서도 판매 · 결제와 배송은 판매처에서 처리됩니다</p>
+    </div>
+  </section>
+
+  <section id="start">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Start here</div>
+        <h2>지금 회사에서 막히는 지점부터</h2>
+        <p>아래에서 가까운 항목을 누르면 해당 저서와 무료 자료로 바로 연결됩니다.</p>
+      </div>
+      <div class="diag">
+        <a href="#book-2"><div class="num">01</div><strong>가지급금·절세·지분</strong><span>쌓인 돈을 합법적으로 꺼내는 순서</span></a>
+        <a href="#book-7"><div class="num">02</div><strong>가업승계·증여</strong><span>주식가치 오르기 전에 해둘 정리</span></a>
+        <a href="#book-4"><div class="num">03</div><strong>정책자금·인증·R&amp;D</strong><span>한도·요건·사업계획서까지</span></a>
+        <a href="#book-11"><div class="num">04</div><strong>노무·고용지원금</strong><span>놓치기 쉬운 지원금을 끝까지</span></a>
+        <a href="#book-6"><div class="num">05</div><strong>창업·투자</strong><span>법인설계부터 투자유치까지</span></a>
+        <a href="#book-9"><div class="num">06</div><strong>AI·1인사업·은퇴</strong><span>경력을 상품으로 만드는 법</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="books">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Books</div>
+        <h2>저서 13권</h2>
+        <p><b>종이책은 부크크(Bookk)</b>에서 주문하시면 그때 인쇄해 보내 드리는 POD 방식입니다. <b>전자책은 유페이퍼(서초동책방)</b>에서 결제 즉시 내려받으실 수 있습니다. 같은 책을 교보문고·예스24·알라딘·영풍문고에서도 사실 수 있고 정가는 어디서나 같습니다.</p>
+      </div>
+
+      <div class="group">
+        <div class="group-head"><h3>법인경영 · 세무 · 자금</h3><span>대표이사의 회사 운영 기본기</span></div>
+        <div class="books">
+          <article class="book" id="book-1">
+            <div class="cover"><div class="k">법인경영 총론</div><div><div class="t">대한민국 CEO를 위한<br>법인경영의 정석</div><div class="s">지배구조·자본구조·승계를 하나의 시간표로</div></div></div>
+            <h4>대한민국 CEO를 위한 법인경영의 정석</h4>
+            <p class="desc">정관·주주간계약·이사회 권한부터 이익잉여금·자사주까지, 32개 장으로 정리한 법인경영 기본서.</p>
+            <div class="meta"><b>종이책 40,900원</b> · 455쪽 (부크크 POD)<br><b>전자책 15,000원</b> (유페이퍼)</div>
+            <div class="links">
+              <div class="buy-row">
+                <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6a0f0f19eb140d31230fc9e2" target="_blank" rel="noopener">부크크 종이책 40,900원</a>
+                <a class="chip chip-upaper" href="https://vision316.upaper.kr/content/1214801" target="_blank" rel="noopener">유페이퍼 전자책 15,000원</a>
+              </div>
+              <div class="buy-row">
+                <a class="chip chip-sub" href="https://www.yes24.com/product/goods/191020993" target="_blank" rel="noopener">예스24</a>
+                <a class="chip chip-sub" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=394925600" target="_blank" rel="noopener">알라딘</a>
+              </div>
+              <p class="store-note">교보문고 · 영풍문고에서도 판매 · ISBN 9791112201119</p>
+            </div>
+          </article>
+
+          <article class="book" id="book-2">
+            <div class="cover"><div class="k">절세 · 자금 · 지분</div><div><div class="t">사장님들이 몰래 사보는<br>법인컨설턴트 비밀노트</div><div class="s">가지급금·차명주식·이익잉여금 정리</div></div></div>
+            <h4>사장님들이 몰래 사보는 법인컨설턴트 비밀노트</h4>
+            <p class="desc">자금관리·절세·지분구조·자산이전·가업승계를 대표이사의 관점에서 푼 실전 전략서.</p>
+            <div class="meta"><b>종이책 37,000원</b> · 404쪽 (부크크 POD)<br><b>전자책 14,000원</b> (유페이퍼)</div>
+            <div class="links">
+              <div class="buy-row">
+                <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6a9a4372e5c62d28b0b39e16" target="_blank" rel="noopener">부크크 종이책 37,000원</a>
+                <a class="chip chip-upaper" href="https://vision316.upaper.kr/content/1219960" target="_blank" rel="noopener">유페이퍼 전자책 14,000원</a>
+              </div>
+              <div class="buy-row">
+                <a class="chip chip-sub" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=402380747" target="_blank" rel="noopener">알라딘</a>
+              </div>
+              <p class="store-note">예스24 · 교보문고 · 영풍문고에서도 판매 · 전자책은 북큐브에도 · ISBN 9791112284136</p>
+            </div>
+          </article>
+
+          <article class="book" id="book-3">
+            <div class="cover"><div class="k">재무 · 세무</div><div><div class="t">재무와 세무의<br>밸런스 컨설팅</div><div class="s">숫자는 하나, 읽는 눈은 둘</div></div></div>
+            <h4>재무와 세무의 밸런스 컨설팅</h4>
+            <p class="desc">세금을 줄이려다 자금조달이 막히는 구조를 피하는 균형 설계법.</p>
+            <div class="meta"><b>전자책</b> (유페이퍼) · 현재 종이책 없음</div>
+            <div class="links">
+              <div class="buy-row">
+                <a class="chip chip-upaper" href="https://vision316.upaper.kr/content/1227335" target="_blank" rel="noopener">유페이퍼 전자책 보기</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="group-head"><h3>승계 · 부동산 · 자산</h3><span>다음 세대로 넘기는 설계</span></div>
+        <div class="books">
+          <article class="book" id="book-7">
+            <div class="cover"><div class="k">가업승계</div><div><div class="t">가업승계의 비밀</div><div class="s">증여·상속 전에 해두어야 할 정리</div></div></div>
+            <h4>가업승계의 비밀</h4>
+            <p class="desc">승계 실패의 원인을 세법이 아니라 준비 순서에서 찾은 현장 보고서.</p>
+            <div class="meta"><b>종이책 46,100원</b> · 521쪽 (부크크 POD)<br><b>전자책</b> (유페이퍼)</div>
+            <div class="links">
+              <div class="buy-row">
+                <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6af4880f815950a57845b487" target="_blank" rel="noopener">부크크 종이책 46,100원</a>
+                <a class="chip chip-upaper" href="https://vision316.upaper.kr/content/1229587" target="_blank" rel="noopener">유페이퍼 전자책 보기</a>
+              </div>
+              <div class="buy-row">
+                <a class="chip chip-sub" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=407447217" target="_blank" rel="noopener">알라딘</a>
+              </div>
+              <p class="store-note">예스24 · 교보문고에서도 판매 · ISBN 9791112357304</p>
+            </div>
+          </article>
+
+          <article class="book" id="book-8">
+            <div class="cover"><div class="k">부동산 · 절세</div><div><div class="t">장특공제 개편 시대의<br>건물주 생존전략</div><div class="s">건물주·임대법인의 새 기준</div></div></div>
+            <h4>장특공제 개편 시대의 건물주 생존전략</h4>
+            <p class="desc">장기보유특별공제 개편 이후 건물주와 임대법인이 다시 계산해야 할 것들.</p>
+            <div class="meta"><b>전자책 5,000원</b> (유페이퍼) · 현재 종이책 없음</div>
+            <div class="links">
+              <div class="buy-row">
+                <a class="chip chip-upaper" href="https://vision316.upaper.kr/content/1215616" target="_blank" rel="noopener">유페이퍼 전자책 5,000원</a>
+              </div>
+              <p class="store-note">교보eBook · 예스24 · 알라딘에서도 판매</p>
+            </div>
+          </article>
+
+          <article class="book" id="book-13">
+            <div class="cover"><div class="k">시집</div><div><div class="t">삶은 작은 것에서<br>깊어진다</div><div class="s">서른 해의 문장들</div></div></div>
+            <h4>삶은 작은 것에서 깊어진다</h4>
+            <p class="desc">삶의 작은 장면 속에서 발견한 깨달음과 마음의 울림을 담은 시집.</p>
+            <div class="meta"><b>종이책 20,100원</b> · 281쪽 (부크크 POD) · 전자책 없음</div>
+            <div class="links">
+              <div class="buy-row">
+                <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6ac7a26fa934e09cc844290a" target="_blank" rel="noopener">부크크 종이책 20,100원</a>
+              </div>
+              <p class="store-note">교보문고 · 예스24 · 알라딘 · 영풍문고에서도 판매 · ISBN 9791112317612</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="group-head"><h3>지원제도 · 노무 · AI · 창업</h3><span>돈과 사람을 다루는 실무</span></div>
+        <div class="books">
+          <article class="book" id="book-4">
+            <div class="cover"><div class="k">정책자금 · 인증</div><div><div class="t">정책자금·인증·R&amp;D<br>완전정복</div><div class="s">과제 선정부터 사업계획서까지</div></div></div>
+            <h4>정책자금·인증·R&amp;D 완전정복</h4>
+            <p class="desc">중진공·기보 자금, 벤처·이노비즈 인증, 연구소 세액공제를 한 흐름으로.</p>
+            <div class="meta"><b>종이책 44,100원</b> · 496쪽 (부크크 POD)<br><b>전자책 14,000원</b> (유페이퍼)</div>
+            <div class="links">
+              <div class="buy-row">
+                <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6a7279d8b6a29216a7dd6f4a" target="_blank" rel="noopener">부크크 종이책 44,100원</a>
+                <a class="chip chip-upaper" href="https://vision316.upaper.kr/content/1215760" target="_blank" rel="noopener">유페이퍼 전자책 14,000원</a>
+              </div>
+              <p class="store-note">교보문고 · 예스24 · 알라딘 · 영풍문고에서도 판매 · ISBN 9791112255839</p>
+            </div>
+          </article>
+
+          <article class="book" id="book-5">
+            <div class="cover"><div class="k">인증 · AI</div><div><div class="t">AI를 활용한<br>기업인증 실무가이드</div><div class="s">진단부터 GPT 인증 챗봇까지</div></div></div>
+            <h4>AI를 활용한 기업인증 실무가이드</h4>
+            <p class="desc">인증 요건 진단과 서류 준비를 GPT 챗봇 5종으로 처리하는 방법.</p>
+            <div class="meta"><b>종이책 16,700원</b> · 217쪽 (부크크 POD)<br><b>전자책 10,000원</b> (유페이퍼)</div>
+            <div class="links">
+              <div class="buy-row">
+                <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6ad8158b83a633ddc5005170" target="_blank" rel="noopener">부크크 종이책 16,700원</a>
+                <a class="chip chip-upaper" href="https://vision316.upaper.kr/content/1226876" target="_blank" rel="noopener">유페이퍼 전자책 10,000원</a>
+              </div>
+              <p class="store-note">교보문고 · 예스24 · 알라딘 · 영풍문고에서도 판매 · ISBN 9791112330260</p>
+            </div>
+          </article>
+
+          <article class="book" id="book-11">
+            <div class="cover"><div class="k">노무 · 고용지원금</div><div><div class="t">2026<br>노무 핵심가이드</div><div class="s">요건·서류·환수 기준까지</div></div></div>
+            <h4>2026 노무 핵심가이드</h4>
+            <p class="desc">근로계약·수당·퇴직금·고용지원금을 2026년 기준으로 정리한 실무 가이드.</p>
+            <div class="meta"><b>전자책</b> (유페이퍼) · 판매 페이지 준비 중</div>
+            <div class="links">
+              <div class="buy-row">
+                <span class="chip chip-muted">유페이퍼 판매 페이지 준비 중</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="book" id="book-6">
+            <div class="cover"><div class="k">창업 · 투자</div><div><div class="t">창업과 투자</div><div class="s">성장자금의 구조를 만드는 법</div></div></div>
+            <h4>창업과 투자</h4>
+            <p class="desc">법인설계·지분구조·정책자금·민간투자·정부 R&amp;D까지 단계별 자금조달.</p>
+            <div class="meta"><b>종이책 24,900원</b> · 250쪽 (부크크 POD)<br><b>전자책 15,000원</b> (유페이퍼)</div>
+            <div class="links">
+              <div class="buy-row">
+                <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6ae01c99ade03c4253e038fc" target="_blank" rel="noopener">부크크 종이책 24,900원</a>
+                <a class="chip chip-upaper" href="https://vision316.upaper.kr/content/1227268" target="_blank" rel="noopener">유페이퍼 전자책 15,000원</a>
+              </div>
+              <div class="buy-row">
+                <a class="chip chip-sub" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=406543790" target="_blank" rel="noopener">알라딘</a>
+              </div>
+              <p class="store-note">예스24 · 교보문고에서도 판매 · ISBN 9791112336644</p>
+            </div>
+          </article>
+
+          <article class="book" id="book-9">
+            <div class="cover"><div class="k">1인사업 · AI</div><div><div class="t">AI로 내 경험을<br>파는 사장님</div><div class="s">경력을 상품으로 만드는 기술</div></div></div>
+            <h4>AI로 내 경험을 파는 사장님</h4>
+            <p class="desc">쌓아온 경력과 경험을 사업 아이템으로 바꿔 매출까지 연결하는 실전서.</p>
+            <div class="meta"><b>종이책 22,300원</b> · 264쪽 (부크크 POD)<br><b>전자책 15,000원</b> (유페이퍼)</div>
+            <div class="links">
+              <div class="buy-row">
+                <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6ae2133fc803daaa6959fe27" target="_blank" rel="noopener">부크크 종이책 22,300원</a>
+                <a class="chip chip-upaper" href="https://vision316.upaper.kr/content/1221153" target="_blank" rel="noopener">유페이퍼 전자책 15,000원</a>
+              </div>
+              <p class="store-note">교보문고 · 예스24 · 영풍문고에서도 판매 · ISBN 9791112339157</p>
+            </div>
+          </article>
+
+          <article class="book" id="book-12">
+            <div class="cover"><div class="k">은퇴 · 노후</div><div><div class="t">AI 시대,<br>준비 없는 은퇴</div><div class="s">남은 30년을 자산으로 바꾸는 법</div></div></div>
+            <h4>AI 시대, 준비 없는 은퇴 <span style="font-size:11px;font-weight:700;color:#8a6b2a;background:#f3e6c8;border-radius:999px;padding:2px 8px;vertical-align:2px">11/30 출간</span></h4>
+            <p class="desc">AI가 일자리를 바꾸는 시대, 퇴직금과 연금으로 남은 30년을 다시 설계하는 방법.</p>
+            <div class="meta"><b>종이책 21,100원</b> · 257쪽 (부크크 POD) · 전자책 없음</div>
+            <div class="links">
+              <div class="buy-row">
+                <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6b045b239ac313960b44c2c3" target="_blank" rel="noopener">부크크 종이책 21,100원</a>
+              </div>
+              <p class="store-note">2026년 11월 30일 출간 · ISBN 9791112374059</p>
+            </div>
+          </article>
+
+          <article class="book" id="book-10">
+            <div class="cover"><div class="k">시집</div><div><div class="t">인생 시(詩)로<br>말하다</div><div class="s">47편의 시와 수채화</div></div></div>
+            <h4>인생 시(詩)로 말하다</h4>
+            <p class="desc">삶의 깨달음을 담은 시집. 지금은 전자책으로 먼저 만나실 수 있습니다.</p>
+            <div class="meta"><b>전자책 10,000원</b> (유페이퍼) · 현재 종이책 없음</div>
+            <div class="links">
+              <div class="buy-row">
+                <a class="chip chip-upaper" href="https://vision316.upaper.kr/content/1226260" target="_blank" rel="noopener">유페이퍼 전자책 10,000원</a>
+              </div>
+              <p class="store-note">교보eBook · 알라딘에서도 판매</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pod">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Paper books · Bookk</div>
+        <h2>종이책은 부크크에서 바로 주문합니다</h2>
+        <p>부크크는 재고를 쌓아 두지 않고 <b>주문이 들어온 뒤 그때 인쇄하는 POD 방식</b>입니다. 아래 <b>부크크에서 사기</b>를 누르면 그 책의 판매 페이지로 바로 이동합니다. 절판 없이 계속 구매하실 수 있고, 교보문고·예스24·알라딘·영풍문고에서 사도 정가는 같습니다.</p>
+        <p style="font-size:12.5px;color:var(--ink-mute)">부크크 주문은 제작·발송에 영업일 3~7일가량 걸립니다. 결제·배송·환불은 구매하신 판매처가 처리합니다.</p>
+      </div>
+      <div class="pod">
+        <ul class="pod-list">
+          <li>
+            <div class="pod-t"><strong>대한민국 CEO를 위한 법인경영의 정석</strong><span>455쪽 · 40,900원 · ISBN 9791112201119</span></div>
+            <div class="pod-s">B5 · 교보문고 · 예스24 · 알라딘 · 영풍문고에서도 판매</div>
+            <div class="links">
+              <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6a0f0f19eb140d31230fc9e2" target="_blank" rel="noopener">부크크에서 사기</a>
+              <a class="chip chip-sub" href="https://www.yes24.com/product/goods/191020993" target="_blank" rel="noopener">예스24</a>
+              <a class="chip chip-sub" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=394925600" target="_blank" rel="noopener">알라딘</a>
+            </div>
+          </li>
+          <li>
+            <div class="pod-t"><strong>사장님들이 몰래 사보는 법인컨설턴트 비밀노트</strong><span>404쪽 · 37,000원 · ISBN 9791112284136</span></div>
+            <div class="pod-s">B5 · 예스24 · 교보문고 · 알라딘 · 영풍문고에서도 판매</div>
+            <div class="links">
+              <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6a9a4372e5c62d28b0b39e16" target="_blank" rel="noopener">부크크에서 사기</a>
+              <a class="chip chip-sub" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=402380747" target="_blank" rel="noopener">알라딘</a>
+            </div>
+          </li>
+          <li>
+            <div class="pod-t"><strong>가업승계의 비밀</strong><span>521쪽 · 46,100원 · ISBN 9791112357304</span></div>
+            <div class="pod-s">B5 · 예스24 · 교보문고 · 알라딘에서도 판매</div>
+            <div class="links">
+              <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6af4880f815950a57845b487" target="_blank" rel="noopener">부크크에서 사기</a>
+              <a class="chip chip-sub" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=407447217" target="_blank" rel="noopener">알라딘</a>
+            </div>
+          </li>
+          <li>
+            <div class="pod-t"><strong>정책자금 · 인증 · R&amp;D 완전정복</strong><span>496쪽 · 44,100원 · ISBN 9791112255839</span></div>
+            <div class="pod-s">B5 · 교보문고 · 예스24 · 알라딘 · 영풍문고에서도 판매</div>
+            <div class="links">
+              <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6a7279d8b6a29216a7dd6f4a" target="_blank" rel="noopener">부크크에서 사기</a>
+            </div>
+          </li>
+          <li>
+            <div class="pod-t"><strong>창업과 투자</strong><span>250쪽 · 24,900원 · ISBN 9791112336644</span></div>
+            <div class="pod-s">B5 · 예스24 · 교보문고 · 알라딘에서도 판매</div>
+            <div class="links">
+              <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6ae01c99ade03c4253e038fc" target="_blank" rel="noopener">부크크에서 사기</a>
+              <a class="chip chip-sub" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=406543790" target="_blank" rel="noopener">알라딘</a>
+            </div>
+          </li>
+          <li>
+            <div class="pod-t"><strong>AI 시대, 준비 없는 은퇴</strong><span>257쪽 · 21,100원 · ISBN 9791112374059</span></div>
+            <div class="pod-s">A5 컬러 · 2026년 11월 30일 출간</div>
+            <div class="links">
+              <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6b045b239ac313960b44c2c3" target="_blank" rel="noopener">부크크에서 사기</a>
+            </div>
+          </li>
+          <li>
+            <div class="pod-t"><strong>AI로 내 경험을 파는 사장님</strong><span>264쪽 · 22,300원 · ISBN 9791112339157</span></div>
+            <div class="pod-s">A5 컬러 · 교보문고 · 예스24 · 영풍문고에서도 판매</div>
+            <div class="links">
+              <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6ae2133fc803daaa6959fe27" target="_blank" rel="noopener">부크크에서 사기</a>
+            </div>
+          </li>
+          <li>
+            <div class="pod-t"><strong>AI를 활용한 기업인증 실무가이드</strong><span>217쪽 · 16,700원 · ISBN 9791112330260</span></div>
+            <div class="pod-s">A5 · 교보문고 · 예스24 · 알라딘 · 영풍문고에서도 판매</div>
+            <div class="links">
+              <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6ad8158b83a633ddc5005170" target="_blank" rel="noopener">부크크에서 사기</a>
+            </div>
+          </li>
+          <li>
+            <div class="pod-t"><strong>삶은 작은 것에서 깊어진다</strong><span>281쪽 · 20,100원 · ISBN 9791112317612</span></div>
+            <div class="pod-s">A5 · 시집 · 교보문고 · 예스24 · 알라딘 · 영풍문고에서도 판매</div>
+            <div class="links">
+              <a class="chip chip-bookk" href="https://bookk.co.kr/bookStore/6ac7a26fa934e09cc844290a" target="_blank" rel="noopener">부크크에서 사기</a>
+            </div>
+          </li>
+        </ul>
+        <p class="pod-note">2026년 11월 27일 부크크 판매 페이지 기준입니다. 판매처 사정에 따라 노출과 가격이 달라질 수 있습니다. 부크크 서점에서 직접 찾으실 때는 bookk.co.kr 통합검색에 도서명 또는 저자명 '<b>강민수</b>'를 넣으시면 됩니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lib" id="library">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Free library</div>
+        <h2>실무 자료실 — 무료</h2>
+        <p>강의에서 쓰는 자료를 그대로 열어 두었습니다. 회원가입 없이 내려받으실 수 있습니다.</p>
+      </div>
+      <div class="lib-grid">
+        <div class="lib-card">
+          <ul class="lib-list">
+            <li><span class="tick">✓</span><span><b>4대 모듈 강의안</b> — 법인 설립·지배구조 / 자본구조·가지급금 / 가업승계·증여특례 / 연구소·벤처·노무</span></li>
+            <li><span class="tick">✓</span><span><b>실무 체크리스트 5종</b> — 설립·자본·승계·지원제도·노무 점검표(인쇄용)</span></li>
+            <li><span class="tick">✓</span><span><b>AI 프롬프트 8종</b> — 지분 희석 시뮬레이션, 승계 시나리오, 지원제도 매칭</span></li>
+            <li><span class="tick">✓</span><span><b>참고자료</b> — 핵심 용어 40여 개, 국세청·중기부·KOITA 공식 확인처</span></li>
+          </ul>
+        </div>
+        <div class="lib-card">
+          <p style="margin:0 0 14px;font-size:14px;color:var(--ink-soft)">휴대폰에서도 앱 설치 없이 바로 열립니다. 필요한 파일만 골라 받거나 전체를 한 번에 내려받으세요.</p>
+          <a class="btn btn-dark" href="https://sunstop7-ux.github.io/kbizlab-lecture-kit/" target="_blank" rel="noopener">자료실 바로가기 →</a>
+          <p style="margin:14px 0 0;font-size:11.5px;color:var(--ink-mute)">본 자료는 수강생 개인 학습용입니다. 출처를 밝히는 인용은 환영하며, 무단 복제·재배포는 삼가 주세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lecture">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Lecture &amp; Advisory</div>
+        <h2>강의 · 법인 자문</h2>
+        <p>기업 임원·관리자 대상 집체 교육, 컨설팅 연계 워크숍, 온라인 강의로 진행합니다. 화이트보드에 우리 회사를 그려보며 순서를 잡는 방식입니다.</p>
+      </div>
+      <div class="topics">
+        <span>법인 절세·지배구조</span><span>가지급금·이익잉여금</span><span>가업승계·증여특례</span><span>개인투자조합</span>
+        <span>정책자금·인증·R&amp;D</span><span>창업과 투자</span><span>고용지원금</span><span>책쓰기</span>
+      </div>
+      <dl class="contact">
+        <div><dt>PHONE</dt><dd><a href="tel:01083536477">010-8353-6477</a></dd></div>
+        <div><dt>EMAIL</dt><dd><a href="mailto:sunstop7@gmail.com">sunstop7@gmail.com</a></dd></div>
+        <div><dt>YOUTUBE</dt><dd><a href="https://www.youtube.com/@KbizLab%EA%B8%B0%EC%97%85%EC%84%B1%EC%9E%A5%EC%97%B0%EA%B5%AC%EC%86%8C" target="_blank" rel="noopener">@KbizLab기업성장연구소</a></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="trust">
+    <div class="wrap">
+      <div class="stats">
+        <div><strong>22년</strong><span>기업 현장 컨설팅</span></div>
+        <div><strong>3,000+</strong><span>직접 방문한 기업</span></div>
+        <div><strong>13권</strong><span>저서(전자책·종이책)</span></div>
+        <div><strong>8개</strong><span>실전 강의 모듈</span></div>
+      </div>
+      <p style="margin:18px 0 0;font-size:13.5px;color:var(--ink-soft)">
+        강민수 — 강민수 기업성장연구소 대표 · 씨이오파트너스(주) 대표이사. 마곡산업단지 CEO 포럼, 한국GM 협력 부품사 300개사, 김포·화성 상공회의소 CEO 과정 등에서 법인경영·승계를 강의해 왔습니다.
+        <a href="https://blog.naver.com/sunstop7" target="_blank" rel="noopener" style="border-bottom:1px solid rgba(16,35,29,.3)">네이버 블로그</a> ·
+        <a href="https://kbizlab.tistory.com" target="_blank" rel="noopener" style="border-bottom:1px solid rgba(16,35,29,.3)">티스토리</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div>
+        <strong>KbizLab 강민수 기업성장연구소</strong>
+        <p>서울 서초구 반포대로 59 선흥빌딩 6층</p>
+        <p>010-8353-6477 · sunstop7@gmail.com</p>
+      </div>
+      <div>
+        <strong>바로가기</strong>
+        <p><a href="#books">저서 13권</a> · <a href="#pod">부크크 종이책</a> · <a href="#library">무료 자료실</a> · <a href="#lecture">강의·자문</a></p>
+      </div>
+    </div>
+    <p class="fine">
+      도서 결제·배송·환불은 각 판매처(부크크, 유페이퍼, 예스24, 교보문고, 영풍문고, 알라딘, 북큐브)의 정책을 따릅니다. 종이책은 POD(주문 즉시 인쇄) 도서로, 주문 후 제작되어 발송까지 영업일 3~7일가량 걸리고 발송준비 이후에는 단순 변심 반품이 제한될 수 있습니다.
+      본 사이트의 내용은 일반 정보 제공을 목적으로 하며, 특정 회사에 대한 세무·법률 자문이 아닙니다. 세법·지원제도 요건은 개정이 잦으므로 실제 의사결정 전 최신 기준과 전문가 검토를 확인하세요.
+      © KbizLab 강민수 기업성장연구소.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
