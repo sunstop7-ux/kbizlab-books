@@ -11,10 +11,10 @@
   gtag('js', new Date());
   gtag('config', 'G-NZZJG9HS3Y');
 </script>
-<title>저서 13권 · 실무 자료실 | KbizLab 강민수 기업성장연구소</title>
-<meta name="description" content="법인경영·지배구조·자본구조·가업승계를 22년 현장에서 다뤄온 강민수 대표의 저서 13권과 무료 실무 자료실. 종이책은 부크크 POD, 전자책은 유페이퍼에서 바로 구매하실 수 있습니다.">
-<meta property="og:title" content="저서 13권 · 실무 자료실 | KbizLab 강민수 기업성장연구소">
-<meta property="og:description" content="책 13권과 강의 자료를 한곳에. 종이책은 부크크에서, 전자책은 유페이퍼에서 바로.">
+<title>강민수 저서 13권(부크크·유페이퍼 판매) · 무료 실무 체크리스트 | KbizLab 강민수 기업성장연구소</title>
+<meta name="description" content="강민수 대표의 저서 13권은 부크크·유페이퍼에서 판매합니다(종이책 POD·전자책). 랜딩페이지에서 무료로 공개하는 것은 실무 체크리스트 5종이며, 심화 강의 자료는 구매 독자·구독자·수강생 인증 후 전용 자료실에서 제공합니다.">
+<meta property="og:title" content="강민수 저서 13권(부크크·유페이퍼 판매) · 무료 실무 체크리스트 | KbizLab 강민수 기업성장연구소">
+<meta property="og:description" content="저서 13권은 부크크·유페이퍼에서 판매. 무료로 공개하는 것은 실무 체크리스트 5종입니다. 심화 강의 자료는 수강생·구매 독자·구독자 인증 후 안내.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b3b2e'/%3E%3Ctext x='50' y='68' font-size='52' font-family='sans-serif' font-weight='700' fill='%23e8c88a' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
 <style>
@@ -133,12 +133,32 @@
 
   /* library */
   .lib{background:var(--cream-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .lib-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center}
+  .lib-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:20px;align-items:start}
   .lib-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
   .lib-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
   .lib-list li{display:flex;gap:10px;font-size:13.5px;color:var(--ink-soft)}
   .lib-list b{color:var(--ink)}
+  .lib-list i{font-style:normal;font-size:11px;color:var(--ink-mute);white-space:nowrap}
   .tick{flex:0 0 20px;height:20px;border-radius:50%;background:rgba(11,59,46,.08);color:var(--emerald);display:grid;place-items:center;font-size:11px;font-weight:900}
+  .free-badge{display:inline-block;font-size:10.5px;letter-spacing:.8px;font-weight:800;color:var(--emerald);background:rgba(11,59,46,.08);border:1px solid rgba(11,59,46,.18);border-radius:999px;padding:4px 10px;margin-bottom:12px}
+  .lib-cta{margin-top:16px}
+  .lib-cta .btn{font-size:13.5px;padding:12px 18px}
+  .lib-fine{margin:12px 0 0;font-size:11.5px;color:var(--ink-mute)}
+
+  /* gated library notice */
+  .gate-box{background:#f3f7f4;border-color:rgba(11,59,46,.24)}
+  .gate-badge{display:inline-block;font-size:10.5px;letter-spacing:.6px;font-weight:800;color:#f7f2e5;background:var(--emerald);border-radius:999px;padding:4px 10px;margin-bottom:10px}
+  .gate-t{font-size:16.5px;margin:0 0 6px;letter-spacing:-.3px}
+  .gate-lead{margin:0 0 12px;font-size:12.5px;color:var(--ink-soft)}
+  .gate-sub{font-size:10.5px;letter-spacing:1.1px;color:var(--gold);font-weight:800;margin:0 0 6px}
+  .gate-sub + .gate-list,.gate-sub + .gate-how{margin-bottom:12px}
+  .gate-list,.gate-how{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:12.8px;color:var(--ink-soft)}
+  .gate-list b,.gate-how b{color:var(--ink)}
+  .gate-how li{display:flex;gap:7px}
+  .gate-how i{font-style:normal;color:var(--gold);font-weight:900;font-size:11px;flex:0 0 13px;padding-top:3px}
+  .gate-contact{margin:0;padding-top:10px;border-top:1px dashed rgba(16,35,29,.2);font-size:12.5px;color:var(--ink-soft)}
+  .gate-contact b{color:var(--ink)}
+  .gate-contact a{border-bottom:1px solid rgba(16,35,29,.28)}
 
   /* lecture */
   .topics{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
@@ -202,7 +222,7 @@
     <nav class="head-links">
       <a href="#books">저서 13권</a>
       <a href="#pod">부크크 종이책</a>
-      <a href="#library">무료 자료실</a>
+      <a href="#library">무료 체크리스트</a>
       <a href="#lecture">강의·자문</a>
     </nav>
   </div>
@@ -214,7 +234,7 @@
     <div class="wrap">
       <span class="eyebrow">KBIZLAB · 강민수 기업성장연구소</span>
       <h1>22년, 3,000개 기업 현장에서 만든<br><em>법인경영 실무</em>를 책과 자료로</h1>
-      <p>지배구조·자본구조·가업승계부터 정책자금·인증·노무·고용지원금까지. 대표님이 회사에서 바로 쓰는 기준으로 정리한 저서 13권과 강의 자료를 한곳에 모았습니다.</p>
+      <p>지배구조·자본구조·가업승계부터 정책자금·인증·노무·고용지원금까지. 대표님이 회사에서 바로 쓰는 기준으로 정리한 <b>저서 13권</b>과, 회의에 그대로 들고 가는 <b>무료 실무 체크리스트 5종</b>을 한곳에 모았습니다.</p>
       <div class="hero-actions">
         <a class="btn btn-gold" href="#pod">부크크에서 종이책 사기</a>
         <a class="btn btn-ghost" href="#books">전자책·도서 전체 보기</a>
@@ -242,7 +262,7 @@
       <div class="sec-head">
         <div class="sec-kicker">Start here</div>
         <h2>지금 회사에서 막히는 지점부터</h2>
-        <p>아래에서 가까운 항목을 누르면 해당 저서와 무료 자료로 바로 연결됩니다.</p>
+        <p>아래에서 가까운 항목을 누르면 해당 저서로 바로 연결됩니다.</p>
       </div>
       <div class="diag">
         <a href="#book-2"><div class="num">01</div><strong>가지급금·절세·지분</strong><span>쌓인 돈을 합법적으로 꺼내는 순서</span></a>
@@ -554,23 +574,44 @@
   <section class="lib" id="library">
     <div class="wrap">
       <div class="sec-head">
-        <div class="sec-kicker">Free library</div>
-        <h2>실무 자료실 — 무료</h2>
-        <p>강의에서 쓰는 자료를 그대로 열어 두었습니다. 회원가입 없이 내려받으실 수 있습니다.</p>
+        <div class="sec-kicker">Free checklists</div>
+        <h2>무료 실무 체크리스트</h2>
+        <p>이 페이지에서 <b>무료로 공개하는 것은 실무 체크리스트 5종</b>입니다. 회의에 들고 가는 점검표 형태로, 회원가입 없이 열람하고 그대로 인쇄하실 수 있습니다.</p>
+        <p>저서 13권은 무료가 아니라 <b>부크크(종이책)·유페이퍼(전자책)</b>에서 판매합니다. 강의안·프롬프트 등 실습 자료 전체는 아래 <b>심화 자료실</b> 안내를 참고하세요.</p>
       </div>
       <div class="lib-grid">
         <div class="lib-card">
+          <div class="free-badge">누구나 무료 · 인쇄용</div>
           <ul class="lib-list">
-            <li><span class="tick">✓</span><span><b>4대 모듈 강의안</b> — 법인 설립·지배구조 / 자본구조·가지급금 / 가업승계·증여특례 / 연구소·벤처·노무</span></li>
-            <li><span class="tick">✓</span><span><b>실무 체크리스트 5종</b> — 설립·자본·승계·지원제도·노무 점검표(인쇄용)</span></li>
-            <li><span class="tick">✓</span><span><b>AI 프롬프트 8종</b> — 지분 희석 시뮬레이션, 승계 시나리오, 지원제도 매칭</span></li>
-            <li><span class="tick">✓</span><span><b>참고자료</b> — 핵심 용어 40여 개, 국세청·중기부·KOITA 공식 확인처</span></li>
+            <li><span class="tick">✓</span><span><b>① 법인 설립 체크리스트</b> — 설립 전 / 설립 절차 / 설립 후 1개월 <i>19항목</i></span></li>
+            <li><span class="tick">✓</span><span><b>② 자본구조·가지급금 점검표</b> — 잔액 파악부터 정리 일정까지 <i>10항목</i></span></li>
+            <li><span class="tick">✓</span><span><b>③ 가업승계 준비 점검표</b> — 기본 요건 / 승계자 / 실행 <i>13항목</i></span></li>
+            <li><span class="tick">✓</span><span><b>④ 지원제도·연구소·고용지원금 점검표</b> — 연구소·벤처·세액공제 <i>11항목</i></span></li>
+            <li><span class="tick">✓</span><span><b>⑤ 노무 리스크 점검표</b> — 근로계약부터 퇴사 정산까지 <i>11항목</i></span></li>
           </ul>
+          <div class="lib-cta">
+            <a class="btn btn-dark" href="checklists.html">체크리스트 5종 열기 · 인쇄하기 →</a>
+          </div>
+          <p class="lib-fine">체크한 칸은 화면에서 바로 체크되며, 인쇄·PDF 저장 시 A4 점검표로 나옵니다. 수강생·독자 개인 학습용으로 공개하며, 무단 복제·재배포는 삼가 주세요.</p>
         </div>
-        <div class="lib-card">
-          <p style="margin:0 0 14px;font-size:14px;color:var(--ink-soft)">휴대폰에서도 앱 설치 없이 바로 열립니다. 필요한 파일만 골라 받거나 전체를 한 번에 내려받으세요.</p>
-          <a class="btn btn-dark" href="https://sunstop7-ux.github.io/kbizlab-lecture-kit/" target="_blank" rel="noopener">자료실 바로가기 →</a>
-          <p style="margin:14px 0 0;font-size:11.5px;color:var(--ink-mute)">본 자료는 수강생 개인 학습용입니다. 출처를 밝히는 인용은 환영하며, 무단 복제·재배포는 삼가 주세요.</p>
+        <div class="lib-card gate-box">
+          <span class="gate-badge">수강생 · 구매 독자 · 구독자 전용</span>
+          <h3 class="gate-t">심화 자료실 안내</h3>
+          <p class="gate-lead">강의에서 쓰는 실습 자료 전체는 인증하신 분께 전용 자료실 주소를 따로 보내드립니다.</p>
+          <div class="gate-sub">포함 자료</div>
+          <ul class="gate-list">
+            <li><b>4대 모듈 강의안</b> — 법인 설립·지배구조 / 자본구조·가지급금 / 가업승계·증여특례 / 연구소·벤처·노무</li>
+            <li><b>AI 프롬프트 8종</b> — 지분 희석 시뮬레이션, 승계 시나리오, 지원제도 매칭</li>
+            <li><b>실무 참고자료 전체</b> — 핵심 용어, 국세청·중기부·KOITA 공식 확인처</li>
+          </ul>
+          <div class="gate-sub">받는 방법 (택 1)</div>
+          <ul class="gate-how">
+            <li><i>①</i><span><b>책 구매 인증 독자</b> — 구매 영수증 또는 도서 사진 인증</span></li>
+            <li><i>②</i><span><b>유튜브</b> ‘강민수 기업성장연구소’ 구독 + 댓글 참여자</span></li>
+            <li><i>③</i><span><b>인스타그램 · 페이스북</b> 팔로우 + 댓글 참여자</span></li>
+            <li><i>④</i><span><b>강의 수강생</b> — 수강 과정명과 이름</span></li>
+          </ul>
+          <p class="gate-contact">신청·인증 : <b><a href="mailto:sunstop7@gmail.com">sunstop7@gmail.com</a></b> 또는 <b><a href="tel:01083536477">010-8353-6477</a></b><br>인증 확인 후 전용 자료실 링크를 보내드립니다.</p>
         </div>
       </div>
     </div>
@@ -623,7 +664,7 @@
       </div>
       <div>
         <strong>바로가기</strong>
-        <p><a href="#books">저서 13권</a> · <a href="#pod">부크크 종이책</a> · <a href="#library">무료 자료실</a> · <a href="#lecture">강의·자문</a></p>
+        <p><a href="#books">저서 13권</a> · <a href="#pod">부크크 종이책</a> · <a href="#library">무료 체크리스트</a> · <a href="checklists.html">체크리스트 5종 인쇄</a> · <a href="#lecture">강의·자문</a></p>
       </div>
     </div>
     <p class="fine">
